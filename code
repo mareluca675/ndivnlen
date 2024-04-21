@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int n, m;
+    cin >> n;
+    m = n;
+    
+    int numarZero = n;
+    
+    while(n > 9){
+        numarZero --;
+        n /= 10;
+    }
+    
+	cout << m;
+	
+	while(-- numarZero > 0){
+	    cout << 0;
+	}
+	
+    return 0;
+}
